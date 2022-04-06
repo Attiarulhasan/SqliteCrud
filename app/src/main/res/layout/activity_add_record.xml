@@ -16,18 +16,65 @@
               android:textSize="30sp"
               android:textColor="@color/black"
               />
+
     <ImageView
+        android:id="@+id/personImage"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:id="@+id/personImage"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/display_text"
+        android:layout_centerHorizontal="true"
         android:padding="2dp"
-        android:src="@drawable/ic_launcher_foreground"/>
+        android:src="@drawable/ic_launcher_foreground" />
 
     <EditText
+        android:id="@+id/et_personName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"/>
+        android:layout_below="@id/personImage"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/background"
+        android:hint="Enter name"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp" />
 
+    <EditText
+        android:id="@+id/et_personPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_personName"
+        android:layout_marginTop="20dp"
+        android:hint="Enter phone"
+        android:background="@drawable/background"
+        android:inputType="phone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp" />
+
+
+    <EditText
+        android:id="@+id/et_personAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/et_personPhone"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background"
+        android:hint="Enter Age"
+        android:inputType="number"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btn_addRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_personAge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Add Record"
+        android:background="@drawable/background"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
 </RelativeLayout>
